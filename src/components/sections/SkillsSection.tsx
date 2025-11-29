@@ -56,7 +56,7 @@ export function SkillsSection() {
   )
 
   return (
-    <SectionContainer id="skills">
+    <SectionContainer id="skills" blur='0px' bgOpacity={0}>
       <SectionTitle>Skills</SectionTitle>
 
       <div className="w-full overflow-hidden">

@@ -4,7 +4,7 @@ import { SectionTitle } from '@/components/common/SectionTitle'
 
 export function AboutSection() {
   return (
-    <SectionContainer id="about">
+    <SectionContainer id="about" blur='2px' bgOpacity={0}>
       <div className="flex flex-col md:flex-row items-center gap-8">
         <div className="flex-shrink-0">
           <Image
@@ -12,7 +12,7 @@ export function AboutSection() {
             alt="Profile"
             width={200}
             height={200}
-            className="rounded-full"
+            className="rounded-full grayscale-[50%]"
           />
         </div>
         <div className="flex-1">

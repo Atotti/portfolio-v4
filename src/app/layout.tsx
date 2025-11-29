@@ -23,7 +23,7 @@ const varelaRound = Varela_Round({
 });
 
 export const metadata: Metadata = {
-  title: "あゆたそどっとこむ",
+  title: "Portfolio ayutaso",
   description: "Portfolio of ayutaso - プログラミングが趣味の学生のポートフォリオサイト",
 };
 

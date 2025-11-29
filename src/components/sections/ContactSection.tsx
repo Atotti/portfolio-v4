@@ -4,7 +4,7 @@ import { SectionTitle } from '@/components/common/SectionTitle'
 
 export function ContactSection() {
   return (
-    <SectionContainer id="contact">
+    <SectionContainer id="contact" blur='0px' bgOpacity={0}>
       <SectionTitle>Contact</SectionTitle>
 
       <div className="text-center space-y-6">
