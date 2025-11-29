@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Noto_Sans_JP, Zen_Kaku_Gothic_New, Varela_Round } from "next/font/google";
 import "./globals.css";
 
@@ -25,6 +25,13 @@ const varelaRound = Varela_Round({
 export const metadata: Metadata = {
   title: "Portfolio ayutaso",
   description: "Portfolio of ayutaso - プログラミングが趣味の学生のポートフォリオサイト",
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
 };
 
 export default function RootLayout({

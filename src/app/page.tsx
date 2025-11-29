@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <div
-      className="min-h-screen bg-cover bg-right bg-center bg-fixed"
+      className="min-h-screen bg-cover bg-right bg-center md:bg-fixed"
       style={{ backgroundImage: 'url(/images/background.png)' }}
     >
       {/* ハンバーガーメニューボタン（モバイルのみ） */}
