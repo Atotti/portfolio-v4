@@ -25,4 +25,18 @@ export const works: Work[] = [
     url: 'https://chromewebstore.google.com/detail/kibaco-advance/gcallmgoceccjabpmdljlkfblgolbakg/related?hl=ja&authuser=0',
     description: '都立大のLMS向け拡張機能です。ユーザーニーズを的確に捉えたツールになっています。',
   },
+  {
+    title: '日本語音声復元モデル',
+    url: 'https://huggingface.co/Atotti/miipher-2-HuBERT-HiFi-GAN-v0.1',
+    description: 'Google の Miiper2 をオープンソースモデルで再現を試みたモデルです。学習済みモデルとデモをHugging Faceで公開しています。',
+    additionalLink: {
+      url: 'https://github.com/Atotti/miipher-2',
+      text: '学習コード',
+    },
+  },
+  {
+    title: 'MADTOWN GTA タイムテーブル',
+    url: 'https://madtown.ayutaso.com/',
+    description: '全自動でMADTOWN企画参加者の配信をリアルタイムで時系列順にまとめ、再生できるWebアプリです。',
+  }
 ]

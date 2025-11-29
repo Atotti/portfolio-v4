@@ -12,7 +12,7 @@ export function AwardsSection() {
           <li key={index} className="flex items-start gap-3 p-3 hover:bg-secondary/50 rounded-lg transition-colors">
             <span className="text-primary text-2xl leading-none">•</span>
             <p className="text-muted-foreground flex-1">
-              <span className="font-semibold text-foreground">{award.title}</span>. {award.award} ({award.date})
+              {award.title}. {award.award} ({award.date})
             </p>
           </li>
         ))}
