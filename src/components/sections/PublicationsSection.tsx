@@ -14,10 +14,10 @@ export function PublicationsSection() {
       <div className="space-y-8 max-w-4xl mx-auto">
         {international.length > 0 && (
           <div>
-            <h3 className="text-xl font-bold mb-4">International conference</h3>
+            <h3 className="text-lg sm:text-xl font-bold mb-4">International conference</h3>
             <ul className="space-y-3">
               {international.map((pub, index) => (
-                <li key={index} className="p-3 hover:bg-secondary/50 rounded-lg transition-colors text-muted-foreground">
+                <li key={index} className="p-2 sm:p-3 hover:bg-secondary/50 rounded-lg transition-colors text-muted-foreground">
                   {pub.authors}. {pub.title}, {pub.venue} ({pub.year})
                   {pub.links && (
                     <span className="ml-2">
@@ -56,10 +56,10 @@ export function PublicationsSection() {
 
         {domestic.length > 0 && (
           <div>
-            <h3 className="text-xl font-bold mb-4">Domestic conference</h3>
+            <h3 className="text-lg sm:text-xl font-bold mb-4">Domestic conference</h3>
             <ul className="space-y-3">
               {domestic.map((pub, index) => (
-                <li key={index} className="p-3 hover:bg-secondary/50 rounded-lg transition-colors text-muted-foreground">
+                <li key={index} className="p-2 sm:p-3 hover:bg-secondary/50 rounded-lg transition-colors text-muted-foreground">
                   {pub.authors}. {pub.title}, {pub.venue} ({pub.year})
                   {pub.links && (
                     <span className="ml-2">
@@ -98,10 +98,10 @@ export function PublicationsSection() {
 
         {books.length > 0 && (
           <div>
-            <h3 className="text-xl font-bold mb-4">Books</h3>
+            <h3 className="text-lg sm:text-xl font-bold mb-4">Books</h3>
             <ul className="space-y-3">
               {books.map((pub, index) => (
-                <li key={index} className="p-3 hover:bg-secondary/50 rounded-lg transition-colors text-muted-foreground">
+                <li key={index} className="p-2 sm:p-3 hover:bg-secondary/50 rounded-lg transition-colors text-muted-foreground">
                   {pub.title}. {pub.venue} ({pub.year})
                 </li>
               ))}

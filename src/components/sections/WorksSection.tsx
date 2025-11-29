@@ -9,12 +9,12 @@ export function WorksSection() {
 
       <div className="space-y-4 max-w-4xl mx-auto">
         {works.map((work) => (
-          <div key={work.title} className="p-4 hover:bg-secondary/50 rounded-lg transition-colors">
+          <div key={work.title} className="p-3 sm:p-4 hover:bg-secondary/50 rounded-lg transition-colors">
             <a
               href={work.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-primary hover:underline text-lg"
+              className="text-primary hover:underline text-base sm:text-lg"
             >
               {work.title}
             </a>

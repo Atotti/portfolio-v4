@@ -42,8 +42,8 @@ export function SkillsSection() {
       key={`${skill.name}-${index}`}
       className="flex flex-col items-center gap-2"
     >
-      <div className="text-4xl text-primary">{skill.icon}</div>
-      <div className="text-sm font-medium text-center whitespace-nowrap">
+      <div className="text-3xl md:text-4xl text-primary">{skill.icon}</div>
+      <div className="text-xs sm:text-sm font-medium text-center whitespace-nowrap">
         {skill.name}
       </div>
       <div className="w-20 bg-secondary rounded-full h-1">
@@ -66,7 +66,7 @@ export function SkillsSection() {
           style={{ scrollBehavior: 'auto' }}
         >
           <div
-            className="grid grid-rows-2 gap-x-8 gap-y-6"
+            className="grid grid-rows-2 gap-x-4 gap-y-4 md:gap-x-8 md:gap-y-6"
             style={{
               gridAutoFlow: 'column',
               gridAutoColumns: 'max-content'

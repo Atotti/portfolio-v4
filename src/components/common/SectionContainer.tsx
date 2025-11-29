@@ -12,8 +12,8 @@ export function SectionContainer({
   children,
   className = '',
   id,
-  blur = '3px',
-  bgOpacity = 10
+  blur = '5px',
+  bgOpacity = 5
 }: SectionContainerProps) {
   // Tailwind CSSの制限により、事前定義されたマッピングを使用
   const blurMap: Record<string, string> = {

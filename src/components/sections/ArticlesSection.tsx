@@ -9,12 +9,12 @@ export function ArticlesSection() {
 
       <div className="space-y-4 max-w-4xl mx-auto">
         {articles.map((article) => (
-          <div key={article.url} className="p-4 hover:bg-secondary/50 rounded-lg transition-colors">
+          <div key={article.url} className="p-3 sm:p-4 hover:bg-secondary/50 rounded-lg transition-colors">
             <a
               href={article.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-primary hover:underline text-lg"
+              className="text-primary hover:underline text-base sm:text-lg"
             >
               {article.title}
             </a>

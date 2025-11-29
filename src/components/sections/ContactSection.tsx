@@ -22,12 +22,12 @@ export function ContactSection() {
           </a>
         </div>
 
-        <div className="flex justify-center gap-6 pt-4">
+        <div className="flex justify-center gap-4 sm:gap-6 pt-4">
           <a
             href="https://twitter.com/aya172957"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-4xl hover:text-primary transition-colors"
+            className="text-3xl sm:text-4xl hover:text-primary transition-colors"
             aria-label="Twitter"
           >
             <FaTwitter />
@@ -36,7 +36,7 @@ export function ContactSection() {
             href="https://github.com/atotti"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-4xl hover:text-primary transition-colors"
+            className="text-3xl sm:text-4xl hover:text-primary transition-colors"
             aria-label="GitHub"
           >
             <FaGithub />

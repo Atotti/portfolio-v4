@@ -14,7 +14,12 @@ const sections = [
   { id: 'contact', label: 'Contact' },
 ]
 
-export function Sidebar() {
+interface SidebarProps {
+  isMobileMenuOpen: boolean
+  onClose: () => void
+}
+
+export function Sidebar({ isMobileMenuOpen, onClose }: SidebarProps) {
   const [activeSection, setActiveSection] = useState('about')
 
   useEffect(() => {
@@ -44,18 +49,33 @@ export function Sidebar() {
     }
   }
 
-  return (
-    <aside
-      className="fixed left-0 top-0 h-screen w-64 backdrop-blur-[2px] border-r border-white/10 flex flex-col"
-      style={{ backgroundColor: 'rgba(255, 255, 255, 0.3)' }}
-    >
+  const handleNavClick = (id: string) => {
+    scrollToSection(id)
+    onClose() // モバイルメニューを閉じる
+  }
+
+  // モバイルメニュー開閉時の背景スクロール防止
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'unset'
+    }
+    return () => {
+      document.body.style.overflow = 'unset'
+    }
+  }, [isMobileMenuOpen])
+
+  // Sidebarのコンテンツ
+  const sidebarContent = (
+    <>
       <nav className="flex-1 overflow-y-auto px-6 pt-12">
         <ul className="space-y-1">
           {sections.map(({ id, label }) => (
             <li key={id}>
               <button
                 type="button"
-                onClick={() => scrollToSection(id)}
+                onClick={() => handleNavClick(id)}
                 className={`w-full text-left py-3 px-4 transition-all relative group ${
                   activeSection === id
                     ? 'text-primary'
@@ -94,6 +114,37 @@ export function Sidebar() {
           <FaGithub />
         </a>
       </div>
-    </aside>
+    </>
+  )
+
+  return (
+    <>
+      {/* モバイル用オーバーレイ */}
+      {isMobileMenuOpen && (
+        <div
+          className="fixed inset-0 bg-black/50 z-40 md:hidden"
+          onClick={onClose}
+          aria-label="メニューを閉じる"
+        />
+      )}
+
+      {/* モバイル用Sidebar */}
+      <aside
+        className={`fixed left-0 top-0 h-screen w-64 z-50 md:hidden backdrop-blur-[2px] border-r border-white/10 flex flex-col transition-transform duration-300 ${
+          isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
+        }`}
+        style={{ backgroundColor: 'rgba(255, 255, 255, 0.3)' }}
+      >
+        {sidebarContent}
+      </aside>
+
+      {/* デスクトップ用Sidebar */}
+      <aside
+        className="hidden md:flex fixed left-0 top-0 h-screen w-64 backdrop-blur-[2px] border-r border-white/10 flex-col"
+        style={{ backgroundColor: 'rgba(255, 255, 255, 0.3)' }}
+      >
+        {sidebarContent}
+      </aside>
+    </>
   )
 }
