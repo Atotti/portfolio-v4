@@ -129,4 +129,15 @@
   .section-container {
     @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24;
   }
+
+  /* レスポンシブ背景画像 */
+  .bg-responsive {
+    background-image: url('/images/background_mobile.webp');
+  }
+
+  @media (min-width: 768px) {
+    .bg-responsive {
+      background-image: url('/images/background.webp');
+    }
+  }
 }

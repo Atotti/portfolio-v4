@@ -9,7 +9,7 @@ export function AboutSection() {
       <div className="flex flex-col md:flex-row items-center gap-8">
         <div className="flex-shrink-0">
           <Image
-            src="/images/icon.png"
+            src="/images/icon.webp"
             alt="Profile"
             width={200}
             height={200}
