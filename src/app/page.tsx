@@ -10,7 +10,10 @@ import { ContactSection } from '@/components/sections/ContactSection'
 
 export default function Home() {
   return (
-    <>
+    <div
+      className="min-h-screen bg-cover bg-right bg-top bg-fixed"
+      style={{ backgroundImage: 'url(/images/background.png)' }}
+    >
       <Sidebar />
       <main className="ml-64 min-h-screen">
         <AboutSection />
@@ -22,6 +25,6 @@ export default function Home() {
         <ArticlesSection />
         <ContactSection />
       </main>
-    </>
+    </div>
   )
 }

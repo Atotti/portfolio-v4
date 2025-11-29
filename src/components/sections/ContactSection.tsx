@@ -24,7 +24,7 @@ export function ContactSection() {
 
         <div className="flex justify-center gap-6 pt-4">
           <a
-            href="https://twitter.com/ayutaso"
+            href="https://twitter.com/aya172957"
             target="_blank"
             rel="noopener noreferrer"
             className="text-4xl hover:text-primary transition-colors"
@@ -33,7 +33,7 @@ export function ContactSection() {
             <FaTwitter />
           </a>
           <a
-            href="https://github.com/ayutaso"
+            href="https://github.com/atotti"
             target="_blank"
             rel="noopener noreferrer"
             className="text-4xl hover:text-primary transition-colors"

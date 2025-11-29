@@ -45,7 +45,10 @@ export function Sidebar() {
   }
 
   return (
-    <aside className="fixed left-0 top-0 h-screen w-64 bg-background border-r border-border/40 flex flex-col">
+    <aside
+      className="fixed left-0 top-0 h-screen w-64 backdrop-blur-[2px] border-r border-white/10 flex flex-col"
+      style={{ backgroundColor: 'rgba(255, 255, 255, 0.3)' }}
+    >
       <nav className="flex-1 overflow-y-auto px-6 pt-12">
         <ul className="space-y-1">
           {sections.map(({ id, label }) => (
