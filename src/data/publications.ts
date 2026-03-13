@@ -47,7 +47,7 @@ export const publications: Publication[] = [
     type: 'domestic',
     authors: '堤歩斗, 大城治城',
     title: '合成データを使用した日本語音声LLMの開発',
-    venue: '第2回「大規模言語モデルのファインチューニング技術と評価」ワークショップ',
+    venue: '第2回「大規模言語モデルのファインチューニング技術と評価」ワークショップ(FT-LLM2026)',
     year: '2026/3',
     links: {
       poster: '/posters/FT-LLM2026.svg',
