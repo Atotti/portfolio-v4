@@ -2,6 +2,16 @@ import { Award } from '@/types'
 
 export const awards: Award[] = [
   {
+    title: '第2回大規模言語モデルのファインチューニング技術と評価 (FT-LLM 2026) コンペティション',
+    award: '自由形タスク部門 1位 優勝',
+    date: '2026/03',
+  },
+  {
+    title: 'ICASSP 2026 SP Grand Challenge The first x-to-audio alignment challenge',
+    award: '3rd Place',
+    date: '2026/01',
+  },
+  {
     title: 'CyberAgent ACE 2024',
     award: '個人賞',
     date: '2024/10',

@@ -3,7 +3,7 @@ import { Career } from '@/types'
 export const career: Career[] = [
   {
     date: 'April 2022',
-    title: '大学入学',
+    title: '東京都立大学システムデザイン学部入学',
     description: '東京都立大学に入学し、コンピュータサイエンスを専攻',
   },
   {
@@ -26,4 +26,14 @@ export const career: Career[] = [
     title: 'Research scientist Intern at CyberAgent AI Lab',
     description: '言語生成AIの開発・実装',
   },
+  {
+    date: 'March 2026',
+    title: '大学卒業予定',
+    description: '東京都立大学を卒業',
+  },
+  {
+    date: 'April 2026',
+    title: '東京都立大学大学院システムデザイン研究科入学',
+    description: '塩田研究室で大学院に進学',
+  }
 ]
