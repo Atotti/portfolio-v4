@@ -3,6 +3,13 @@ import { Publication } from '@/types'
 export const publications: Publication[] = [
   {
     type: 'international',
+    authors: 'Ayuto Tsutsumi, Ryosuke Kohita',
+    title: 'Same Image, Different Meaning: A Proposal of Context-Dependent Image Retrieval Task',
+    venue: 'SIGIR 2026',
+    year: '2026/7',
+  },
+  {
+    type: 'international',
     authors: 'Ayuto Tsutsumi, Kohei Tanaka, Sayaka Shiota',
     title: 'The TMU System for the XACLE Challenge: Training Large Audio Language Models with CLAP Pseudo-Labels',
     venue: 'ICASSP 2026 Workshop',
