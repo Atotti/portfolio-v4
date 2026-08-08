@@ -31,7 +31,7 @@ export function CareerSection() {
                 }`}
               >
                 <div className="text-primary font-semibold mb-1">
-                  {item.date}
+                  {item.endDate ? `${item.date} – ${item.endDate}` : item.date}
                 </div>
                 <h4 className="text-lg font-bold mb-2">{item.title}</h4>
                 <p className="text-muted-foreground">{item.description}</p>

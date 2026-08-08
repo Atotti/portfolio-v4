@@ -2,6 +2,10 @@ import { Article } from '@/types'
 
 export const articles: Article[] = [
   {
+    title: 'なんでも挑戦しようとしていたら、気が付つけば全て繋がっていた',
+    url: 'https://tottiweblog.hatenablog.com/entry/2026/07/01/155939',
+  },
+  {
     title: '2週間で"あれまぁTV"を作った！サイバーエージェント『ACE』インターン記録',
     url: 'https://zenn.dev/ayutaso/articles/d7c6a154edfa02',
   },
