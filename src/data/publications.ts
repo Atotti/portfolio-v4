@@ -4,9 +4,23 @@ export const publications: Publication[] = [
   {
     type: 'international',
     authors: 'Ayuto Tsutsumi, Ryosuke Kohita',
-    title: 'Same Image, Different Meaning: A Proposal of Context-Dependent Image Retrieval Task',
+    title: 'Same Image, Different Meanings: Toward Retrieval of Context-Dependent Meanings',
     venue: 'SIGIR 2026',
     year: '2026/7',
+    links: {
+      paper: 'https://arxiv.org/abs/2605.12905',
+      poster: '/posters/SIGIR2026.svg',
+    },
+  },
+  {
+    type: 'international',
+    authors: 'Ayuto Tsutsumi, Akira Gotoh, Yuko Saito, Hiroki Matsuura, Sayaka Shiota',
+    title: 'Domain Adaptation for Deepfake Audio Detection under Degraded Channel Conditions',
+    venue: 'Odyssey 2026',
+    year: '2026/6',
+    links: {
+      paper: 'https://www.isca-archive.org/odyssey_2026/tsutsumi26_odyssey.pdf',
+    },
   },
   {
     type: 'international',
@@ -16,6 +30,7 @@ export const publications: Publication[] = [
     year: '2026/5',
     links: {
       paper: 'https://www.arxiv.org/abs/2602.00604',
+      poster: '/posters/ICASSP2026.svg',
     }
   },
   {
@@ -26,6 +41,16 @@ export const publications: Publication[] = [
     year: '2025/7',
     links: {
       paper: 'https://www.arxiv.org/abs/2506.03619',
+    },
+  },
+  {
+    type: 'domestic',
+    authors: '堤歩斗, 塩田さやか',
+    title: '深層話者埋め込みのためのドメイン情報の除去による話者照合精度の分析',
+    venue: '音学シンポジウム2026(第146回MUS・第160回SLP合同研究発表会)',
+    year: '2026/6',
+    links: {
+      poster: '/posters/OTOGAKU2026.svg',
     },
   },
   {
