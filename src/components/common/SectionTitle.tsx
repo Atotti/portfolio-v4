@@ -8,7 +8,7 @@ interface SectionTitleProps {
 export function SectionTitle({ children, className = '' }: SectionTitleProps) {
   return (
     <h2
-      className={`text-3xl lg:text-4xl font-semibold mb-8 text-center border-primary pb-2 inline-block w-auto mx-auto block ${className}`}
+      className={`text-3xl lg:text-4xl font-semibold mb-4 inline-block ${className}`}
       style={{ fontFamily: 'var(--font-varela-round)' }}
     >
       {children}

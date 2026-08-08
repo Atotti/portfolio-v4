@@ -7,7 +7,7 @@ export function AwardsSection() {
     <SectionContainer id="awards">
       <SectionTitle>Awards</SectionTitle>
 
-      <ul className="space-y-4 max-w-4xl mx-auto">
+      <ul className="space-y-1 max-w-4xl mx-auto">
         {awards.map((award, index) => (
           <li key={index} className="flex items-start gap-3 p-2 sm:p-3 hover:bg-secondary/50 rounded-lg transition-colors">
             <span className="text-primary text-xl sm:text-2xl leading-none">•</span>

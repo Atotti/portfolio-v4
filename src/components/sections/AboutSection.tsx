@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import { SectionContainer } from '@/components/common/SectionContainer'
 import { SectionTitle } from '@/components/common/SectionTitle'
-import { FaEnvelope, FaTwitter, FaGithub } from 'react-icons/fa'
+import { FaEnvelope, FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa'
+import { SiGooglescholar } from 'react-icons/si'
 
 export function AboutSection() {
   return (
@@ -27,35 +28,55 @@ export function AboutSection() {
         </div>
       </div>
       <div className="mt-8 space-y-4">
-        <p className="text-muted-foreground">
+        <p className="text-muted-foreground text-center">
           メールまたはTwitterにてご連絡ください。Twitterの方が反応が早いです。
         </p>
-        <div className="flex items-center gap-2">
-          <FaTwitter className="text-primary" />
-          <a
-            href="https://x.com/aya172957"
-            className="text-primary hover:underline"
-          >
-            @aya172957
-          </a>
-        </div>
-        <div className="flex items-center gap-2">
-          <FaEnvelope className="text-primary" />
-          <a
-            href="mailto:aya172957@ayutaso.com"
-            className="text-primary hover:underline"
-          >
-            aya172957@ayutaso.com
-          </a>
-        </div>
-        <div className="flex items-center gap-2">
-          <FaGithub className="text-primary" />
-          <a
-            href="https://github.com/Atotti"
-            className="text-primary hover:underline"
-          >
-            Atotti
-          </a>
+        <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
+          <div className="flex items-center gap-2">
+            <FaTwitter className="text-primary" />
+            <a
+              href="https://x.com/aya172957"
+              className="text-primary hover:underline"
+            >
+              @aya172957
+            </a>
+          </div>
+          <div className="flex items-center gap-2">
+            <FaEnvelope className="text-primary" />
+            <a
+              href="mailto:aya172957@ayutaso.com"
+              className="text-primary hover:underline"
+            >
+              aya172957@ayutaso.com
+            </a>
+          </div>
+          <div className="flex items-center gap-2">
+            <FaGithub className="text-primary" />
+            <a
+              href="https://github.com/Atotti"
+              className="text-primary hover:underline"
+            >
+              Atotti
+            </a>
+          </div>
+          <div className="flex items-center gap-2">
+            <SiGooglescholar className="text-primary" />
+            <a
+              href="https://scholar.google.com/citations?user=W6IIaAwAAAAJ&hl=ja"
+              className="text-primary hover:underline"
+            >
+              Google Scholar
+            </a>
+          </div>
+          <div className="flex items-center gap-2">
+            <FaLinkedin className="text-primary" />
+            <a
+              href="https://www.linkedin.com/in/ayuto-tsutsumi-ba9547419/"
+              className="text-primary hover:underline"
+            >
+              LinkedIn
+            </a>
+          </div>
         </div>
       </div>
     </SectionContainer>

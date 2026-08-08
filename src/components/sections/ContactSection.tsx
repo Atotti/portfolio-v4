@@ -1,4 +1,5 @@
-import { FaEnvelope, FaTwitter, FaGithub } from 'react-icons/fa'
+import { FaEnvelope, FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa'
+import { SiGooglescholar } from 'react-icons/si'
 import { SectionContainer } from '@/components/common/SectionContainer'
 import { SectionTitle } from '@/components/common/SectionTitle'
 
@@ -33,13 +34,31 @@ export function ContactSection() {
             <FaTwitter />
           </a>
           <a
-            href="https://github.com/atotti"
+            href="https://github.com/Atotti"
             target="_blank"
             rel="noopener noreferrer"
             className="text-3xl sm:text-4xl hover:text-primary transition-colors"
             aria-label="GitHub"
           >
             <FaGithub />
+          </a>
+          <a
+            href="https://scholar.google.com/citations?user=W6IIaAwAAAAJ&hl=ja"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-3xl sm:text-4xl hover:text-primary transition-colors"
+            aria-label="Google Scholar"
+          >
+            <SiGooglescholar />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/ayuto-tsutsumi-ba9547419/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-3xl sm:text-4xl hover:text-primary transition-colors"
+            aria-label="LinkedIn"
+          >
+            <FaLinkedin />
           </a>
         </div>
       </div>

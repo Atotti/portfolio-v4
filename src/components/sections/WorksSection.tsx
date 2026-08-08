@@ -7,9 +7,9 @@ export function WorksSection() {
     <SectionContainer id="works">
       <SectionTitle>Works</SectionTitle>
 
-      <div className="space-y-4 max-w-4xl mx-auto">
+      <div className="space-y-1 max-w-4xl mx-auto">
         {works.map((work) => (
-          <div key={work.title} className="p-3 sm:p-4 hover:bg-secondary/50 rounded-lg transition-colors">
+          <div key={work.title} className="p-2 sm:p-3 hover:bg-secondary/50 rounded-lg transition-colors">
             <a
               href={work.url}
               target="_blank"

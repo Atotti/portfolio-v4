@@ -7,9 +7,9 @@ export function ArticlesSection() {
     <SectionContainer id="articles">
       <SectionTitle>Articles</SectionTitle>
 
-      <div className="space-y-4 max-w-4xl mx-auto">
+      <div className="space-y-1 max-w-4xl mx-auto">
         {articles.map((article) => (
-          <div key={article.url} className="p-3 sm:p-4 hover:bg-secondary/50 rounded-lg transition-colors">
+          <div key={article.url} className="p-2 sm:p-3 hover:bg-secondary/50 rounded-lg transition-colors">
             <a
               href={article.url}
               target="_blank"
