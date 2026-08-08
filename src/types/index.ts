@@ -34,9 +34,19 @@ export interface Award {
 }
 
 export interface Career {
+  /** 開始時期 */
   date: string
+  /** 終了時期。継続中は 'Present'、単発の出来事は省略 */
+  endDate?: string
   title: string
   description: string
+}
+
+export interface News {
+  date: string
+  title: string
+  description?: string
+  url?: string
 }
 
 export interface Article {
