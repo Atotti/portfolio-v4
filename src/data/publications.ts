@@ -60,7 +60,8 @@ export const publications: Publication[] = [
     venue: '第11回 音声・音響・信号処理ワークショップ（SPEASIP）',
     year: '2026/3',
     links: {
-      paper: 'https://www-isys.sd.tmu.ac.jp/local/2026/SPEASIP2026_tsutsumi.pdf',
+      // 研究室サーバーは HTTPS 非対応のため http のまま
+      paper: 'http://www-isys.sd.tmu.ac.jp/local/2026/SPEASIP2026_tsutsumi.pdf',
       poster: '/posters/SPEASIP2026.svg',
     }
   },
