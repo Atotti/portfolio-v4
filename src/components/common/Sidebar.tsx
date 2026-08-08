@@ -1,15 +1,17 @@
 'use client'
 
-import { FaTwitter, FaGithub } from 'react-icons/fa'
+import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa'
+import { SiGooglescholar } from 'react-icons/si'
 import { useEffect, useState } from 'react'
 
 const sections = [
   { id: 'about', label: 'About' },
+  { id: 'news', label: 'News' },
+  { id: 'publications', label: 'Publications' },
+  { id: 'career', label: 'Career' },
   { id: 'skills', label: 'Skills' },
   { id: 'works', label: 'Works' },
-  { id: 'publications', label: 'Publications' },
   { id: 'awards', label: 'Awards' },
-  { id: 'career', label: 'Career' },
   { id: 'articles', label: 'Articles' },
   { id: 'contact', label: 'Contact' },
 ]
@@ -94,9 +96,9 @@ export function Sidebar({ isMobileMenuOpen, onClose }: SidebarProps) {
         </ul>
       </nav>
 
-      <div className="px-8 py-10 flex items-center gap-6 border-t border-border/40">
+      <div className="px-8 py-10 flex items-center gap-5 border-t border-border/40">
         <a
-          href="https://twitter.com/ayutaso"
+          href="https://twitter.com/aya172957"
           target="_blank"
           rel="noopener noreferrer"
           className="text-xl text-muted-foreground hover:text-primary transition-colors"
@@ -105,13 +107,31 @@ export function Sidebar({ isMobileMenuOpen, onClose }: SidebarProps) {
           <FaTwitter />
         </a>
         <a
-          href="https://github.com/ayutaso"
+          href="https://github.com/Atotti"
           target="_blank"
           rel="noopener noreferrer"
           className="text-xl text-muted-foreground hover:text-primary transition-colors"
           aria-label="GitHub"
         >
           <FaGithub />
+        </a>
+        <a
+          href="https://scholar.google.com/citations?user=W6IIaAwAAAAJ&hl=ja"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-xl text-muted-foreground hover:text-primary transition-colors"
+          aria-label="Google Scholar"
+        >
+          <SiGooglescholar />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/ayuto-tsutsumi-ba9547419/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-xl text-muted-foreground hover:text-primary transition-colors"
+          aria-label="LinkedIn"
+        >
+          <FaLinkedin />
         </a>
       </div>
     </>
