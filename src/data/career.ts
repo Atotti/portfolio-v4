@@ -44,7 +44,7 @@ export const career: Career[] = [
   {
     date: 'July 2026',
     endDate: 'March 2027',
-    title: '産総研 覚醒プロジェクト 研究実施者',
-    description: '坂東研究室にて「Speech LLMを応用した話者属性付き音声理解の研究」',
+    title: 'Research Assistant at AIST',
+    description: '覚醒プロジェクト研究実施者として坂東研究室に所属',
   },
 ]

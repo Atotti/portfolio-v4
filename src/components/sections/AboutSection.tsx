@@ -20,7 +20,25 @@ export function AboutSection() {
         <div className="flex-1">
           <SectionTitle className="md:text-left">About me</SectionTitle>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Hello I am Ayuto Tsutsumi, a master student at Tokyo Metropolitan University(TMU).
+            Hello I am Ayuto Tsutsumi, a master student in{' '}
+            <a
+              href="http://www-isys.sd.tmu.ac.jp/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:underline"
+            >
+              Shiota Lab
+            </a>{' '}
+            at Tokyo Metropolitan University (TMU). I am also a research assistant in{' '}
+            <a
+              href="https://ybando.jp/ja/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:underline"
+            >
+              Bando Lab
+            </a>
+            .
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed">
             Web開発(Backend, Frontend)、NLP、音声処理(音声合成, 話者照合, DeepFake検知 etc...)、マルチモーダル言語モデルに興味があります。
@@ -44,10 +62,10 @@ export function AboutSection() {
           <div className="flex items-center gap-2">
             <FaEnvelope className="text-primary" />
             <a
-              href="mailto:aya172957@ayutaso.com"
+              href="mailto:ayu@ayutaso.com"
               className="text-primary hover:underline"
             >
-              aya172957@ayutaso.com
+              ayu@ayutaso.com
             </a>
           </div>
           <div className="flex items-center gap-2">

@@ -16,10 +16,10 @@ export function ContactSection() {
         <div className="flex items-center justify-center gap-2">
           <FaEnvelope className="text-primary" />
           <a
-            href="mailto:aya172957@ayutaso.com"
+            href="mailto:ayu@ayutaso.com"
             className="text-primary hover:underline"
           >
-            aya172957@ayutaso.com
+            ayu@ayutaso.com
           </a>
         </div>
 
