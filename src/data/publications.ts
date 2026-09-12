@@ -26,7 +26,7 @@ export const publications: Publication[] = [
     type: 'international',
     authors: 'Ayuto Tsutsumi, Kohei Tanaka, Sayaka Shiota',
     title: 'The TMU System for the XACLE Challenge: Training Large Audio Language Models with CLAP Pseudo-Labels',
-    venue: 'ICASSP 2026 Workshop',
+    venue: 'ICASSP 2026 SP-GC-Challenge',
     year: '2026/5',
     links: {
       paper: 'https://www.arxiv.org/abs/2602.00604',
@@ -37,7 +37,7 @@ export const publications: Publication[] = [
     type: 'international',
     authors: 'Ayuto Tsutsumi, Yuu Jinnai',
     title: 'Do Large Language Models Know Folktales? A Case Study of Yokai in Japanese Folktales',
-    venue: 'ACL2025 Findings',
+    venue: 'ACL 2025 Findings',
     year: '2025/7',
     links: {
       paper: 'https://www.arxiv.org/abs/2506.03619',
