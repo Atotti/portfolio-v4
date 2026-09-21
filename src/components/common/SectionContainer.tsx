@@ -42,7 +42,7 @@ export function SectionContainer({
 
   return (
     <section id={id} className={`section-container ${className}`}>
-      <div className={`${blurClass} ${bgClass} rounded-lg p-5 sm:p-7 lg:p-8`}>
+      <div className={`${blurClass} ${bgClass} rounded-lg px-4 py-4 sm:px-6 sm:py-5`}>
         {children}
       </div>
     </section>

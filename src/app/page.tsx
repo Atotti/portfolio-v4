@@ -6,12 +6,12 @@ import { Sidebar } from '@/components/common/Sidebar'
 import { AboutSection } from '@/components/sections/AboutSection'
 import { NewsSection } from '@/components/sections/NewsSection'
 import { PublicationsSection } from '@/components/sections/PublicationsSection'
+import { GrantsSection } from '@/components/sections/GrantsSection'
 import { AwardsSection } from '@/components/sections/AwardsSection'
 import { CareerSection } from '@/components/sections/CareerSection'
 import { WorksSection } from '@/components/sections/WorksSection'
 import { SkillsSection } from '@/components/sections/SkillsSection'
 import { ArticlesSection } from '@/components/sections/ArticlesSection'
-import { ContactSection } from '@/components/sections/ContactSection'
 
 export default function Home() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -38,16 +38,16 @@ export default function Home() {
         isMobileMenuOpen={isMobileMenuOpen}
         onClose={() => setIsMobileMenuOpen(false)}
       />
-      <main className="md:ml-64 min-h-screen">
+      <main className="md:ml-64 min-h-screen pt-14 pb-8 md:pt-6">
         <AboutSection />
         <NewsSection />
         <PublicationsSection />
-        <CareerSection />
-        <SkillsSection />
-        <WorksSection />
+        <GrantsSection />
         <AwardsSection />
+        <CareerSection />
+        <WorksSection />
+        <SkillsSection />
         <ArticlesSection />
-        <ContactSection />
       </main>
     </div>
   )

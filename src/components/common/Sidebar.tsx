@@ -8,12 +8,12 @@ const sections = [
   { id: 'about', label: 'About' },
   { id: 'news', label: 'News' },
   { id: 'publications', label: 'Publications' },
-  { id: 'career', label: 'Career' },
-  { id: 'skills', label: 'Skills' },
-  { id: 'works', label: 'Works' },
+  { id: 'funding', label: 'Funding' },
   { id: 'awards', label: 'Awards' },
+  { id: 'career', label: 'Career' },
+  { id: 'works', label: 'Works' },
+  { id: 'skills', label: 'Skills' },
   { id: 'articles', label: 'Articles' },
-  { id: 'contact', label: 'Contact' },
 ]
 
 interface SidebarProps {
@@ -78,7 +78,7 @@ export function Sidebar({ isMobileMenuOpen, onClose }: SidebarProps) {
               <button
                 type="button"
                 onClick={() => handleNavClick(id)}
-                className={`w-full text-left py-3 px-4 transition-all relative group ${
+                className={`w-full text-left py-2 px-4 transition-all relative group ${
                   activeSection === id
                     ? 'text-primary'
                     : 'text-muted-foreground hover:text-foreground'

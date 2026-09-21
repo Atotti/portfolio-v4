@@ -7,33 +7,38 @@ export function WorksSection() {
     <SectionContainer id="works">
       <SectionTitle>Works</SectionTitle>
 
-      <div className="space-y-1 max-w-4xl mx-auto">
+      <ul className="divide-y divide-foreground/10">
         {works.map((work) => (
-          <div key={work.title} className="p-2 sm:p-3 hover:bg-secondary/50 rounded-lg transition-colors">
+          <li key={work.title} className="py-1.5 text-sm sm:text-[15px] leading-relaxed">
             <a
               href={work.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-primary hover:underline text-base sm:text-lg"
+              className="font-medium text-primary hover:underline"
             >
               {work.title}
             </a>
             {work.description && (
-              <p className="text-muted-foreground mt-1">{work.description}</p>
+              <span className="text-muted-foreground"> — {work.description}</span>
             )}
             {work.additionalLink && (
-              <a
-                href={work.additionalLink.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm text-primary hover:underline block mt-2"
-              >
-                {work.additionalLink.text}
-              </a>
+              <>
+                {' '}
+                [
+                <a
+                  href={work.additionalLink.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline"
+                >
+                  {work.additionalLink.text}
+                </a>
+                ]
+              </>
             )}
-          </div>
+          </li>
         ))}
-      </div>
+      </ul>
     </SectionContainer>
   )
 }

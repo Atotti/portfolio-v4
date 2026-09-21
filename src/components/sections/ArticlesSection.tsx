@@ -7,20 +7,20 @@ export function ArticlesSection() {
     <SectionContainer id="articles">
       <SectionTitle>Articles</SectionTitle>
 
-      <div className="space-y-1 max-w-4xl mx-auto">
+      <ul className="divide-y divide-foreground/10">
         {articles.map((article) => (
-          <div key={article.url} className="p-2 sm:p-3 hover:bg-secondary/50 rounded-lg transition-colors">
+          <li key={article.url} className="py-1.5 text-sm sm:text-[15px]">
             <a
               href={article.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-primary hover:underline text-base sm:text-lg"
+              className="text-primary hover:underline"
             >
               {article.title}
             </a>
-          </div>
+          </li>
         ))}
-      </div>
+      </ul>
     </SectionContainer>
   )
 }

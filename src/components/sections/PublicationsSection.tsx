@@ -55,19 +55,19 @@ export function PublicationsSection() {
     <SectionContainer id="publications">
       <SectionTitle>Publications</SectionTitle>
 
-      <div className="space-y-8 max-w-4xl mx-auto">
+      <div className="space-y-3">
         {GROUPS.map(({ type, heading }) => {
           const items = publications.filter((pub) => pub.type === type)
           if (items.length === 0) return null
 
           return (
             <div key={type}>
-              <h3 className="text-lg sm:text-xl font-bold mb-4">{heading}</h3>
-              <ul className="space-y-3">
+              <h3 className="text-sm font-semibold text-primary mb-1">{heading}</h3>
+              <ul className="divide-y divide-foreground/10">
                 {items.map((pub, index) => (
                   <li
                     key={index}
-                    className="p-2 sm:p-3 hover:bg-secondary/50 rounded-lg transition-colors text-muted-foreground"
+                    className="py-1.5 text-sm sm:text-[15px] leading-relaxed text-muted-foreground"
                   >
                     <Authors authors={pub.authors} />. {pub.title}, {pub.venue} ({pub.year})
                     {pub.links && (

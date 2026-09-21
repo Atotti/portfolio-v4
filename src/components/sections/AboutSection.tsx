@@ -1,26 +1,44 @@
 import Image from 'next/image'
 import { SectionContainer } from '@/components/common/SectionContainer'
-import { SectionTitle } from '@/components/common/SectionTitle'
 import { FaEnvelope, FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { SiGooglescholar } from 'react-icons/si'
+
+const links = [
+  { href: 'mailto:ayu@ayutaso.com', label: 'ayu@ayutaso.com', icon: FaEnvelope },
+  { href: 'https://x.com/aya172957', label: '@aya172957', icon: FaTwitter },
+  { href: 'https://github.com/Atotti', label: 'Atotti', icon: FaGithub },
+  {
+    href: 'https://scholar.google.com/citations?user=W6IIaAwAAAAJ&hl=ja',
+    label: 'Google Scholar',
+    icon: SiGooglescholar,
+  },
+  {
+    href: 'https://www.linkedin.com/in/ayuto-tsutsumi-ba9547419/',
+    label: 'LinkedIn',
+    icon: FaLinkedin,
+  },
+]
 
 export function AboutSection() {
   return (
     <SectionContainer id="about" blur='2px' bgOpacity={0}>
-      <div className="flex flex-col md:flex-row items-center gap-8">
-        <div className="flex-shrink-0">
-          <Image
-            src="/images/icon.webp"
-            alt="Profile"
-            width={200}
-            height={200}
-            className="rounded-full grayscale-[50%]"
-          />
-        </div>
-        <div className="flex-1">
-          <SectionTitle className="md:text-left">About me</SectionTitle>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            Hello I am Ayuto Tsutsumi, a master student in{' '}
+      <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5">
+        <Image
+          src="/images/icon.webp"
+          alt="Profile"
+          width={120}
+          height={120}
+          className="shrink-0 rounded-full grayscale-[50%]"
+        />
+        <div className="flex-1 space-y-2">
+          <h1
+            className="text-2xl sm:text-3xl font-semibold"
+            style={{ fontFamily: 'var(--font-varela-round)' }}
+          >
+            Ayuto Tsutsumi <span className="text-lg text-muted-foreground">堤 歩斗</span>
+          </h1>
+          <p className="text-[15px] text-muted-foreground leading-relaxed">
+            Master student in{' '}
             <a
               href="http://www-isys.sd.tmu.ac.jp/"
               target="_blank"
@@ -28,8 +46,8 @@ export function AboutSection() {
               className="text-primary hover:underline"
             >
               Shiota Lab
-            </a>{' '}
-            at Tokyo Metropolitan University (TMU). I am also a research assistant in{' '}
+            </a>
+            , Tokyo Metropolitan University (TMU) / Research assistant in{' '}
             <a
               href="https://ybando.jp/ja/"
               target="_blank"
@@ -38,63 +56,28 @@ export function AboutSection() {
             >
               Bando Lab
             </a>
-            .
-          </p>
-          <p className="text-lg text-muted-foreground leading-relaxed">
+            , AIST.
+            <br />
             Web開発(Backend, Frontend)、NLP、音声処理(音声合成, 話者照合, DeepFake検知 etc...)、マルチモーダル言語モデルに興味があります。
           </p>
-        </div>
-      </div>
-      <div className="mt-8 space-y-4">
-        <p className="text-muted-foreground text-center">
-          メールまたはTwitterにてご連絡ください。Twitterの方が反応が早いです。
-        </p>
-        <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
-          <div className="flex items-center gap-2">
-            <FaTwitter className="text-primary" />
-            <a
-              href="https://x.com/aya172957"
-              className="text-primary hover:underline"
-            >
-              @aya172957
-            </a>
-          </div>
-          <div className="flex items-center gap-2">
-            <FaEnvelope className="text-primary" />
-            <a
-              href="mailto:ayu@ayutaso.com"
-              className="text-primary hover:underline"
-            >
-              ayu@ayutaso.com
-            </a>
-          </div>
-          <div className="flex items-center gap-2">
-            <FaGithub className="text-primary" />
-            <a
-              href="https://github.com/Atotti"
-              className="text-primary hover:underline"
-            >
-              Atotti
-            </a>
-          </div>
-          <div className="flex items-center gap-2">
-            <SiGooglescholar className="text-primary" />
-            <a
-              href="https://scholar.google.com/citations?user=W6IIaAwAAAAJ&hl=ja"
-              className="text-primary hover:underline"
-            >
-              Google Scholar
-            </a>
-          </div>
-          <div className="flex items-center gap-2">
-            <FaLinkedin className="text-primary" />
-            <a
-              href="https://www.linkedin.com/in/ayuto-tsutsumi-ba9547419/"
-              className="text-primary hover:underline"
-            >
-              LinkedIn
-            </a>
-          </div>
+          <ul className="flex flex-wrap gap-x-4 gap-y-1 text-sm">
+            {links.map(({ href, label, icon: Icon }) => (
+              <li key={href}>
+                <a
+                  href={href}
+                  target={href.startsWith('mailto:') ? undefined : '_blank'}
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-primary hover:underline"
+                >
+                  <Icon className="shrink-0" />
+                  {label}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <p className="text-xs text-muted-foreground">
+            ご連絡はメールまたはTwitterへ（Twitterの方が反応が早いです）。
+          </p>
         </div>
       </div>
     </SectionContainer>
