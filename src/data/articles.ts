@@ -2,6 +2,10 @@ import { Article } from '@/types'
 
 export const articles: Article[] = [
   {
+    title: 'Shizuku-Duplex：自然な間合いで話す日本語 Full-Duplex モデル',
+    url: 'https://shizuku.ai/blog/1/',
+  },
+  {
     title: 'なんでも挑戦しようとしていたら、気が付つけば全て繋がっていた',
     url: 'https://tottiweblog.hatenablog.com/entry/2026/07/01/155939',
   },

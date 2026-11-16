@@ -108,6 +108,16 @@ export const publications: Publication[] = [
     },
   },
   {
+    type: 'preprint',
+    authors: 'Ayuto Tsutsumi, Yuu Jinnai',
+    title: 'TalkMatrix: Generating Character Dialogue that is Both Consistent and Diverse',
+    venue: 'arXiv',
+    year: '2026/7',
+    links: {
+      paper: 'https://arxiv.org/abs/2609.19022',
+    },
+  },
+  {
     type: 'others',
     authors: '堤歩斗',
     title: 'モダンフロントエンドフレームワークAstroで作る個人サイト開発',

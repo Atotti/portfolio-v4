@@ -10,6 +10,7 @@ import { PosterViewer, PosterItem } from '@/components/common/PosterViewer'
 const GROUPS = [
   { type: 'international', heading: 'International conference' },
   { type: 'domestic', heading: 'Domestic conference' },
+  { type: 'preprint', heading: 'Preprint' },
   { type: 'others', heading: 'Others' },
 ] as const
 

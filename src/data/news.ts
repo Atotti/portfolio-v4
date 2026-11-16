@@ -3,6 +3,12 @@ import { News } from '@/types'
 // 日付の降順。受賞は Awards セクションにも正式名称で一覧がある
 export const news: News[] = [
   {
+    date: '2026/11',
+    title: 'Shizuku-Duplex を発表',
+    description: '自然な間合いで話す日本語 Full-Duplex 音声対話モデル（Shizuku AI）',
+    url: 'https://shizuku.ai/blog/1/',
+  },
+  {
     date: '2026/07',
     title: '産総研 覚醒プロジェクト 令和8年度 採択',
     description: 'Speech LLMを応用した話者属性付き音声理解の研究',

@@ -15,7 +15,7 @@ export interface Work {
 }
 
 export interface Publication {
-  type: 'international' | 'domestic' | 'others'
+  type: 'international' | 'domestic' | 'preprint' | 'others'
   authors: string
   title: string
   venue: string
